@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <title>ISCP Employee Registration Form</title>
+    <style>
+      body {
+        background-image: url("img/paper.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ISCP Employee Registration Form</h1>
+    <form>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/en/c/c9/Seal_of_the_International_State_College_of_the_Philippines.png"
+      /><br />
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/aCUhfPAyDHY"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <h2>Basic information</h2>
+      <label for="firstName">First name: </label>
+      <input type="text" placeholder="Ex. Juan" id="firstName" /><br />
+      <label for="lastName">Last name: </label>
+      <input type="text" placeholder="Ex. Tamad" id="lastName" /><br />
+      <label for="placeOfBirth">Place of birth: </label>
+      <input
+        type="text"
+        placeholder="Ex. Manila City"
+        id="placeOfBirth"
+      /><br />
+      <label>Civil status</label>
+      <select name="dropdown">
+        <option selected disabled>select one</option>
+        <option value="single">Single</option>
+        <option value="married">Married</option>
+        <option value="widowed">Widowed</option>
+        <option value="separated">Separated</option></select
+      ><br />
+      <label>Gender</label><br />
+      <input type="radio" name="gender" />male<br />
+      <input type="radio" name="gender" />female<br />
+      <input type="radio" name="gender" />other<br />
+      <label for="mother'sMaidenName">Mother's maiden name: </label>
+      <input
+        type="text"
+        placeholder="Ex. Juanita Tinatamad"
+        id="mother'sMaidenName"
+      /><br />
+      <label for="father'sName">Father's name</label>
+      <input type="text" placeholder="Juancho Tamad" id="father'sName" /><br />
+    </form>
+    <h2>Contact information</h2>
+    <form>
+      <label for="emailAddress">Email address: </label>
+      <input
+        type="email"
+        placeholder="Ex. juantamad@bobo.com"
+        id="emailAddress"
+      /><br />
+      <label for="contactNumber(mobile)">Contact number (mobile): </label>
+      <input
+        type="number"
+        placeholder="Ex. 0912345678"
+        id="contactNumber(mobile)"
+      /><br />
+      <label for="contactNumber(telephone)">Contact number (telephone): </label>
+      <input
+        type="number"
+        placeholder="Ex. 0341234567"
+        id="contactNumber(telephone)"
+      /><br />
+    </form>
+    <h2>Address</h2>
+    <form>
+      <label for="streetNumber">Street number</label>
+      <label for="streetName">Street name</label><br />
+      <input
+        type="text"
+        placeholder="Ex. 1234"
+        id="streetNumber"
+        style="width: 90px"
+      />
+      <input
+        type="text"
+        placeholder="Ex. Masisipag St.,"
+        id="streetName"
+      /><br />
+      <label for="barangay">Barangay</label>
+      <label for="city/town">City/Town</label><br />
+      <input
+        type="text"
+        placeholder="Ex. Buhay"
+        id="barangay"
+        style="width: 60px"
+      />
+      <input type="text" placeholder="Ex. Mapayapa" id="city/town" /><br />
+      <label for="province">Province</label><br />
+      <input type="text" placeholder="Ex. Baguio" id="province" /><br />
+      <label for="fullAddress">Full address</label>
+      <textarea
+        placeholder="Ex. 1234 Masisipag St., Brgy. Buhay Mapayapa City Baguio"
+        for="fullAddress"
+        style="width: 300px"
+      ></textarea>
+    </form>
+    <h2>Government information</h2>
+    <form>
+      <label for="sssId">SSS ID: </label>
+      <input type="number" placeholder="Ex. 123456789" id="sssId" /><br />
+      <label for="pag-ibigId">Pag-Ibig ID: </label>
+      <input
+        type="number"
+        placeholder="Ex. 123456789012"
+        id="pag-ibigId"
+      /><br />
+      <label for="philHealthId">PhilHealth ID: </label>
+      <input
+        type="number"
+        placeholder="Ex. 123456789012"
+        id="philHealthId"
+      /><br />
+      <label>Upload 2x2 picture</label><br />
+      <input type="file" name="fileupload" accept="image/*" /><br />
+      <label>Upload picture of government ID</label><br />
+      <input type="file" name="fileupload" accept="image/*" /><br />
+    </form>
+    <h2>Account information</h2>
+    <form>
+      <label for="username">Username: </label>
+      <input type="text" placeholder="Ex. juantamad" id="username" /><br />
+      <label for="password">Password: </label>
+      <input
+        type="password"
+        placeholder="at least 8 characters"
+        id="password"
+      /><br />
+      <label for="confirmPassword">Confirm password: </label>
+      <input
+        type="password"
+        placeholder="re-enter password"
+        id="confirmPassword"
+      /><br />
+      <label>Upload profile image</label><br />
+      <input type="file" name="fileupload" accept="image/*" />
+    </form>
+    <h2>Have you experienced any of the following in the last 30 days?</h2>
+    <form>
+      <input type="checkbox" name="coughing" />Coughing
+      <input type="checkbox" name="fever" />Fever
+      <input type="checkbox" name="commonCold" />Common cold
+      <input type="checkbox" name="bodyAche" />Body ache
+      <input type="checkbox" name="soreThroat" />Sore throat
+      <input type="checkbox" name="tiredness" />Tiredness
+      <input type="checkbox" name="lossOfSmell" />Loss of smell
+    </form>
+    <h2>Give a short description about yourself</h2>
+    <form>
+      <textarea
+        placeholder="briefly describe yourself"
+        styly="width: 300px"
+      ></textarea>
+    </form>
+  </body>
+</html>

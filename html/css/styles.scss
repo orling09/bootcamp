@@ -1,0 +1,29 @@
+$btn-font-family: "Comic Sans MS";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$themeColor1: purple;
+$themeColor2: blue;
+$themeColor3: red;
+$widthVacation: 400px;
+
+h1 {
+  color: $themeColor1;
+}
+div {
+  .subheading {
+    color: $themeColor3;
+  }
+  h1 {
+    color: $themeColor2;
+  }
+  p {
+    color: $themeColor2;
+  }
+}
+p {
+  color: $themeColor1;
+}
+.vacation {
+  width: $widthVacation;
+}

@@ -1,0 +1,129 @@
+body {
+  margin: 0px;
+  font-family: Tahoma;
+  text-align: center;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li.bar {
+  float: left;
+}
+
+li.bar {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.bar:hover {
+  background-color: rgb(0, 0, 139);
+}
+
+ul {
+  list-style-position: inside;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+div.photo {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.photo:hover {
+  border: 1px solid #777;
+}
+
+div.photo img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+footer {
+  color: rgb(160, 160, 160);
+  font-size: 75%;
+  margin-top: 50px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.colorblue {
+  color: rgb(70, 130, 180);
+}
+
+.colorpink {
+  color: rgb(255, 0, 216);
+}
+
+.colorgray {
+  color: rgb(160, 160, 160);
+}
+
+#font200 {
+  font-size: 200%;
+}
+
+#font250 {
+  font-size: 250%;
+}
+
+#margintop20 {
+  margin-top: 20px;
+}
+
+#marginright20 {
+  margin-right: 20px;
+}
+/* unvisited link */
+a.save:link {
+  color: blue;
+}
+
+/* visited link */
+a.save:visited {
+  color: orange;
+}
+
+/* mouse over link */
+a.save:hover {
+  color: magenta;
+}
+
+/* selected link */
+a.save:active {
+  color: lime;
+}
+table,
+th,
+td {
+  border: 2px solid;
+  border-collapse: collapse;
+  border-style: dotted;
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+tr:hover {
+  background-color: rgb(232, 201, 143);
+}
+tr:nth-child(even) {
+  background-color: lightgray;
+}

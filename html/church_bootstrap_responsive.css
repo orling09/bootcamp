@@ -1,0 +1,29 @@
+.background {
+  background-color: rgb(70, 130, 180);
+}
+
+ul {
+  list-style-position: inside;
+}
+
+footer {
+  color: rgb(160, 160, 160);
+  font-size: 75%;
+  margin-top: 50px;
+}
+
+.colorblue {
+  color: rgb(70, 130, 180);
+}
+
+.colorpink {
+  color: rgb(255, 0, 216);
+}
+
+.colorgray {
+  color: rgb(160, 160, 160);
+}
+
+#margintop20 {
+  margin-top: 20px;
+}

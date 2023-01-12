@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>Form Webpage</title>
+  </head>
+  <body>
+    <h1>Election Ballot</h1>
+    <form>
+      <label>Age</label><br />
+      <input type="number" placeholder="ex. 18" /><br />
+      <label for="firstName">First name: </label><br />
+      <input
+        type="text"
+        placeholder="ex. Juan"
+        style="width: 200px"
+        id="firstName"
+      /><br />
+      <label for="lastName">Last name: </label><br />
+      <input
+        type="text"
+        placeholder="ex. Tamad"
+        style="width: 200px"
+        id="lastName"
+      /><br />
+      <label for="email">Email: </label><br />
+      <input
+        type="email"
+        placeholder="ex. juantamad@bobo.com"
+        style="width: 200px"
+        id="email"
+      /><br />
+      <label for="password">Password: </label><br />
+      <input
+        type="password"
+        placeholder="at least 8 characters"
+        style="width: 200px"
+        id="password"
+      /><br />
+      <label for="confirmPassword">Confirm password: </label><br />
+      <input
+        type="password"
+        placeholder="re-enter password"
+        style="width: 200px"
+        id="confirmPassword"
+      /><br />
+      <label for="description">Description: </label><br />
+      <textarea
+        placeholder="describe yourself"
+        style="width: 400px"
+        id="description"
+      ></textarea
+      ><br />
+      <label>Upload family picture</label>
+      <input type="file" name="fileupload" accept="image/*" />
+      <label>Schedule</label>
+      <input type="date" /><br />
+      <label>Level of strength</label>
+      <input type="range" min="0" max="100" step="2" value="3" /><br />
+      <input type="button" value="Submt" />
+    </form>
+    <h2>President</h2>
+    <form>
+      <input type="radio" name="president" />Aswang<br />
+      <input type="radio" name="president" />Kapre<br />
+      <input type="radio" name="president" />Manananggal<br />
+    </form>
+    <h2>Vice President</h2>
+    <form>
+      <select name="dropdown">
+        <option selected disabled>select one</option>
+        <option value="kurosakiIchigo">Kurosaki Ichigo</option>
+        <option value="uzumakiNaruto">Uzumaki Naruto</option>
+        <option value="uchihaSasuke">Uchiha Sasuke</option>
+        <option value="kenshinHimura">Kenshin Himura</option>
+      </select>
+    </form>
+    <h2>Partylist</h2>
+    <form>
+      <input type="checkbox" value="konoha" />Konoha<br />
+      <input type="checkbox" value="karakuraTown" />Karakura Town<br />
+      <input type="checkbox" value="soulSociety" />Soul Society<br />
+      <input type="button" value="Submit" />
+    </form>
+  </body>
+</html>

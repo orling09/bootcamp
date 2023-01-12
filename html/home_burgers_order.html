@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid gray;
+      }
+      nav a:hover,
+      nav a.active {
+        background: pink;
+        color: #fff;
+      }
+      .top-heading {
+        background-color: rgb(255, 200, 99);
+      }
+
+      .sub-heading {
+        background-color: rgb(255, 229, 182);
+      }
+
+      #sub-heading {
+        background-color: rgb(250, 238, 216);
+      }
+      .food-icon {
+        height: 30px;
+      }
+
+      .food-row:hover {
+        background-color: orange;
+      }
+    </style>
+    <title>Bear Burger's - Order</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light text-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/161/161588.png"
+            style="width: 40px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="home_burgers_order.html"
+                >Order</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5 pb-5">
+      <h1 class="display-1">Order Here!</h1>
+      <div class="row">
+        <div class="col-lg-8">
+          <table class="table table-border">
+            <tr class="text-center top-heading">
+              <th>Icons</th>
+              <th>Item Name</th>
+              <th>Price</th>
+            </tr>
+            <tr class="sub-heading">
+              <th colspan="3" class="text-center">Meals</th>
+            </tr>
+            <tr class="food-row">
+              <td><img src="home_burger_icon.png" class="food-icon" /></td>
+              <td>Burgers</td>
+              <td>₱55.00</td>
+            </tr>
+            <tr class="food-row">
+              <td>
+                <img src="home_friedchicken_icon.png" class="food-icon" />
+              </td>
+              <td>Fried chicken</td>
+              <td>₱55.00</td>
+            </tr>
+            <tr class="food-row">
+              <td><img src="home_spaghetti_icon.png" class="food-icon" /></td>
+              <td>Spaghetti</td>
+              <td>₱55.00</td>
+            </tr>
+            <tr class="food-row">
+              <td><img src="home_pizza_icon.png" class="food-icon" /></td>
+              <td>Pizza</td>
+              <td>₱150.00</td>
+            </tr>
+            <tr class="sub-heading">
+              <th colspan="3" class="text-center">Drinks</th>
+            </tr>
+            <tr class="food-row">
+              <td><img src="home_coke_icon.png" class="food-icon" /></td>
+              <td>Coke</td>
+              <td>₱20.00</td>
+            </tr>
+            <tr class="food-row">
+              <td><img src="home_sprite_icon.png" class="food-icon" /></td>
+              <td>Sprite</td>
+              <td>₱20.00</td>
+            </tr>
+            <tr class="food-row">
+              <td><img src="home_sarsi_icon.jpg" class="food-icon" /></td>
+              <td>Sarsi</td>
+              <td>₱20.00</td>
+            </tr>
+            <tr>
+              <td colspan="2" rowspan="2" id="sub-heading">
+                All items are subject to tax. No refunds. All items are not
+                transferable.
+              </td>
+              <td class="food-row">Extra rice - ₱20.00</td>
+            </tr>
+            <tr>
+              <td class="food-row">Condiments - ₱20.00</td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-lg-4">
+          <img
+            src="https://www.dellacasapasta.com/images/basil-sauce.png"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+    <div style="background-color: black">
+      <div class="container text-white pt-5">
+        <h1 class="display-2">Tell Us What You Think!</h1>
+        <div class="row">
+          <div class="col-lg-6">
+            <img
+              src="https://thumbs.dreamstime.com/b/cucumber-burger-ingredients-floating-black-background-isolated-vertical-cucumber-burger-ingredients-floating-bun-cheese-tomato-177814997.jpg"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-lg-6">
+            <form>
+              <div class="form-group">
+                <label>Name (optional)</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Province (optional)</label>
+                <input type="text" class="form-control" />
+              </div>
+              <div class="form-group mt-3">
+                <label>How many times have you went to our restaurant?</label
+                ><br />
+                <input
+                  type="radio"
+                  name="times-visited"
+                  value="This is the first time!"
+                />This is the first time!<br />
+                <input
+                  type="radio"
+                  name="times-visited"
+                  value="Second time"
+                />Second time<br />
+                <input
+                  type="radio"
+                  name="times-visited"
+                  value="Third time or more"
+                />Third time or more<br />
+              </div>
+              <div class="form-group mt-3">
+                <label>How would you rate the food?</label><br />
+                <input type="radio" name="food-rating" value="1-star" />⭐
+                <input type="radio" name="food-rating" value="2-star" />⭐⭐
+                <input type="radio" name="food-rating" value="3-star" />⭐⭐⭐
+                <input type="radio" name="food-rating" value="4-star" />⭐⭐⭐⭐
+                <input
+                  type="radio"
+                  name="food-rating"
+                  value="5-star"
+                />⭐⭐⭐⭐⭐
+              </div>
+              <div class="form-group mt-3">
+                <label>How would you rate the services?</label><br />
+                <input type="radio" name="service-rating" value="1-star" />⭐
+                <input type="radio" name="service-rating" value="2-star" />⭐⭐
+                <input
+                  type="radio"
+                  name="service-rating"
+                  value="3-star"
+                />⭐⭐⭐
+                <input
+                  type="radio"
+                  name="service-rating"
+                  value="4-star"
+                />⭐⭐⭐⭐
+                <input
+                  type="radio"
+                  name="service-rating"
+                  value="5-star"
+                />⭐⭐⭐⭐⭐
+              </div>
+              <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="background-color: lightgray">
+      <div class="container text-black pt-4 pb-3">
+        <footer>
+          <div class="row fs-5 mt-3 mb-3 text-center">
+            <div class="col-lg-3 text-end">Email address:</div>
+            <div class="col-lg-3 text-start">
+              <strong>orlandjude@gmail.com</strong>
+            </div>
+            <div class="col-lg-3 text-end">Contact number:</div>
+            <div class="col-lg-3 text-start"><strong>12345678910</strong></div>
+          </div>
+          <div class="row mt-4 text-center">
+            <p>
+              <a
+                href="https://www.facebook.com/orling.villanueva/"
+                target="_blank"
+              >
+                <img
+                  src="home_index_facebook.png"
+                  alt="facebook profile"
+                  class="me-3"
+                  style="width: 30px"
+              /></a>
+              <a href="https://twitter.com/orabelle23/" target="_blank">
+                <img
+                  src="home_index_twitter.png"
+                  alt="twitter profile"
+                  class="me-3"
+                  style="width: 30px"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img
+                  src="home_index_instagram.png"
+                  alt="instagram profile"
+                  class="me-3"
+                  style="width: 30px"
+              /></a>
+              <a href="https://www.pinterest.ph/" target="_blank">
+                <img
+                  src="home_index_pinterest.png"
+                  alt="pinterest profile"
+                  class="me-3"
+                  style="width: 30px"
+              /></a>
+              <a href="https://www.linkedin.com/" target="_blank">
+                <img
+                  src="home_index_linkedin.png"
+                  alt="linkedin profile"
+                  class="me-3"
+                  style="width: 30px"
+              /></a>
+              <a href="https://www.youtube.com/" target="_blank">
+                <img
+                  src="home_index_youtube.png"
+                  alt="youtube profile"
+                  class="me-3"
+                  style="width: 30px"
+              /></a>
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
